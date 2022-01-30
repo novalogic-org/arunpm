@@ -30,7 +30,6 @@
     
 }
 
-
 @keyframes bounce{
  20%,50%,80% to{
      transform: translateY(0);
