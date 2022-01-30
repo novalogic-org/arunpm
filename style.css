@@ -1,0 +1,47 @@
+*{
+     
+    margin: 0px;
+    padding: 0px;
+    overflow:visible
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(Font\Montserrat\static\Montserrat-Black.ttf);
+  }
+  div {
+    font-family: Montserrat;
+  }
+
+.pic
+{
+    animation: bounce 5s infinite ;
+}
+.logo
+{
+    color: white;
+}
+.main
+{   width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #1f7ea1, #6ff7e8 );
+    padding: 60px;
+    
+}
+
+
+@keyframes bounce{
+ 20%,50%,80% to{
+     transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-15px);
+    }
+    70%{
+        transform:transalteY(-12px);
+    }
+    90%{
+        transform: transalteY(-4px);
+    }
+}
