@@ -164,6 +164,7 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     position: relative;
+    z-index: 1;
 }
 .radial-gradient {
     position:absolute;
@@ -177,6 +178,7 @@ section .title::after{
     background: 
     radial-gradient(at center, #6ff7e8, #6e1d75);
     mix-blend-mode:overlay; 
+    z-index: 2;  
   }
 .home .max-width{
   width: 100%;
