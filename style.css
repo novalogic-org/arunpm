@@ -13,7 +13,7 @@ html{
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -79,7 +79,7 @@ section .title::after{
 .navbar.sticky{
     padding: 15px 0;
     
-    background: linear-gradient(to right, #0acffe, #6ff7e8 );
+    background: linear-gradient(to right, #0acffe, #6e1d75 );
 }
 .navbar .max-width{
     display: flex;
@@ -111,7 +111,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #0acffe;
+    color: black;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -126,8 +126,8 @@ section .title::after{
 }
 .scroll-up-btn{
     position: fixed;
-    height: 45px;
-    width: 42px;
+    height: 50px;
+    width: 50px;
     background: #0acffe;
     right: 30px;
     bottom: 10px;
@@ -163,17 +163,27 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
-
+.radial-gradient {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    /*Fallback if gradeints don't work */
+    background: transparent;
+    /*Linear gradient... */
+    background: 
+    radial-gradient(at center, #6ff7e8, #6e1d75);
+    mix-blend-mode:overlay; 
+  }
 .home .max-width{
   width: 100%;
   display: flex;
 }
 .home .max-width .row{
   margin-right: 0;
-}
-.home .home-content .text-1{
-    font-size: 27px;
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -353,7 +363,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .projects .carousel .card:hover{
-    background: linear-gradient(to right, #0acffe, #6ff7e8 );
+    background: linear-gradient(to right, #0acffe, #6e1d75 );
 }
 .projects .carousel .card .box{
     display: flex;
@@ -361,6 +371,7 @@ section .title::after{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    color: white;
 }
 .projects .carousel .card:hover .box{
     transform: scale(1.05);
@@ -369,6 +380,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: white;
 }
 .projects .carousel .card img{
     height: 150px;

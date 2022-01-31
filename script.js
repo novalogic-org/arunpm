@@ -41,12 +41,7 @@ $(document).ready(function(){
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Engineer", "Designer", "Thinker"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -70,4 +65,13 @@ $(document).ready(function(){
             }
         }
     });
+});
+$(document).mousemove(function(event) {
+  windowWidth = $(window).width();
+  windowHeight = $(window).height();
+  
+  mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+  mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+  
+  $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #6ff7e8, #6e1d75)');
 });
