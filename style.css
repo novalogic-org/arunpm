@@ -507,6 +507,31 @@ section .title::after{
   color: #0acffe;
   background: none;
 }
+
+
+/* social section styling */
+#social-test {
+    text-align: left;
+    font-size: 30px;
+}  
+.social li 
+    {
+    color: black;
+    list-style-type: none;
+    display: inline-block;
+    align-items: baseline;
+    margin: 20px;
+    text-align: left;
+    transition: ease-out 0.3s; 
+    margin:0 10% 0 0 ;
+            
+}
+.social li:hover{
+    color: #0acffe;
+    border-color: #0acffe;
+    transform: scale(1.2);
+}
+
 /* footer section styling */
 footer{
     background: #111;
